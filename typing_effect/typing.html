@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Typing Effect</title>
+
+    <style>
+    .wrapper {
+      height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+
+    .wrapper {
+      height: 100vh;
+      display: grid;/*This part is important for centering*/
+      place-items: center;
+    }
+
+    .typing-demo {
+      width: 23ch; /*set word length*/
+      animation: typing 2s steps(23), blink .5s step-end infinite alternate;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid;
+      font-family: monospace;
+      font-size: 2em;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0
+      }
+    }
+
+    @keyframes blink {
+      50% {
+        border-color: transparent
+      }
+    }
+    </style>
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="typing-demo">
+        Hello, This is a typingadfadgfag.
+      </div>
+
+    </div>
+
+
+  </body>
+</html>
